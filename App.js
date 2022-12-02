@@ -3,10 +3,12 @@ import { StyleSheet, Text, View } from 'react-native';
 import { Provider } from 'react-redux';
 export default function App() {
   return (
+    <Provider>
     <View style={styles.container}>
       <Text>Let's build Uber</Text>
    
     </View>
+    </Provider>
   );
 }
 
