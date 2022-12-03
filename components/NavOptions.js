@@ -3,6 +3,7 @@ import { Image, Text, TouchableOpacity, View } from 'react-native';
 import { FlatList } from 'react-native-web';
 import tw from "tailwind-react-native-classnames";
 import { Icon } from '@rneui/themed';
+import { useNavigation } from '@react-navigation/native';
 
 const data = [
     {
@@ -24,6 +25,7 @@ const data = [
 
 
 const NavOptions= () => {
+    const navigation = useNavigation();
     return(
       <FlatList
       data={data}
@@ -31,6 +33,8 @@ const NavOptions= () => {
       horizontal
       renderItem={({item}) =>  (
         <TouchableOpacity 
+        onPress={() => navigation.navigate(item.screen)}
+
         style= {tw`p-2 pl-6 pb-8 pt-4 bg-gray-200 m-2 w-40`}>
         <view>
 
