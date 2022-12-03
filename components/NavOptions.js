@@ -4,7 +4,6 @@ import { FlatList } from 'react-native-web';
 import tw from "tailwind-react-native-classnames";
 import { Icon } from '@rneui/themed';
 
-
 const data = [
     {
         id: "123",
@@ -36,15 +35,18 @@ const NavOptions= () => {
         <view>
 
             <Image
-style={{width: 120, height: 120, resizeMode: "contain"}}
+            style={{width: 120, height: 120, resizeMode: "contain"}}
 
             source = {{uri: item.image}}
             />
             <Text style={tw`mt-2 text-lg font-semibold`}>{item.title}</Text>
-            <icon style={tw`mt-2 bg-black rounded-full w-10 mt-4`}
-            name="arrowright" color="white"
+            <Icon style={tw`p-2 bg-black rounded-full w-10 mt-4`}
+            name="arrowright" 
+            color="white"
             type="antdesign"
+           
             />
+        
 
         </view>
         </TouchableOpacity>
