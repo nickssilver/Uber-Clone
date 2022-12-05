@@ -1,11 +1,18 @@
 import React, { Component } from 'react';
 import { Text, View } from 'react-native';
+import tw from 'tailwind-react-native-classnames';
 
 const MapScreen= () => {
     return(
-        <view>
+        <View>
           <text>Hey</text>  
-        </view>
+   
+
+        <View style={tw`h-1/2`}></View>
+        <View style={tw`h-1/2`}></View>
+
+        </View>
+       
     );
 };
 
