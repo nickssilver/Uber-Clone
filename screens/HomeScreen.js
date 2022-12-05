@@ -19,6 +19,12 @@ const HomeScreen = () => {
                 uri: "https://links.papareact.com/gzs",
             }}
             />
+<GooglePlacesAutocomplete
+placeholder="where From?"
+nearbyPlacesAPI="GooglePlacesSearch"
+debounce={400}
+/>
+
             <NavOptions />
         </View>
         </SafeAreaView>
